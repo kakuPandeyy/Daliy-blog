@@ -1,0 +1,21 @@
+<%- include('partical/header') %>
+
+<h1>home</h1>
+<br>
+<br>
+
+<%  posts.forEach(function(post){ %>
+  <h2><%=  post.title %></h2>
+  <p><%= post.body.substring(0,100) + "..." %>
+    <a href="/post/<%=post.title%>">Read more</a>
+  </p>
+ 
+  <% } )%>
+  <div class="super compose" > <a href="/compose" style="color: aliceblue; text-decoration: none;">+</a></div>
+ 
+
+
+
+
+
+<%- include('partical/footer') %>
