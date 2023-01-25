@@ -1,3 +1,6 @@
+body{
+overflow-y: hidden;
+}
 
 h2{
     color:#47b59f
@@ -61,7 +64,7 @@ form label{
     text-decoration: none;
 }
 .super.compose {
-    background-color: var(--green)
+    color: var(--green)
 }
 .super.post {
     background-color: var(--red);
@@ -71,7 +74,7 @@ form label{
     position: fixed;
    left: 40px;
    bottom: 65px; 
-
+display: none;
 }
 .addList{
   margin-top: 100px;
@@ -91,3 +94,35 @@ form label{
 .addList>button:hover{
     color: #1a27bc;
 }
+.menuIcon{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+.menu{
+    display: none;
+    text-align: center;
+    position: relative;
+    left: 66px;
+   
+}
+.menu.active{
+    display: inline-block;
+
+}
+.menuIcon{
+    display: inline-flex;
+position: relative;
+left: 75%;
+border-style: none;
+border-radius: 25%;
+background-color: transparent;
+}
+.menuIcon.active{
+    display: none;   
+}
+.super.post{
+    background-color: transparent;
+    color: var(--red);
+    border-style: none;
+}
+} 
