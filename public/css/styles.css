@@ -1,7 +1,6 @@
 
-
 h2{
-    color:#47b59f
+    color:#47b59f !important;
 }
 .container-fluid {
     padding-top: 70px;
@@ -95,6 +94,10 @@ display: none;
 .menuIcon{
     display: none;
 }
+.beta{
+ margin-top: 5%;
+ margin-bottom:5% 
+}
 @media only screen and (max-width: 600px) {
 .menu{
     display: none;
@@ -122,5 +125,9 @@ background-color: transparent;
     background-color: transparent;
     color: var(--red);
     border-style: none;
+ }
+.beta{
+ margin-top: 10%;
+ margin-bottom:10%;
 }
-} 
+}
